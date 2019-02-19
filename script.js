@@ -21,39 +21,130 @@
  * Variable mutation and type coercion
  */
 
-var firstName = "jackie";
-var age = 34;
+// var firstName = "jackie";
+// var age = 34;
 
-console.log(firstName + " " + age);
+// console.log(firstName + " " + age);
 
-var job, isMarried;
-job = "teacher";
-isMarried = false;
+// var job, isMarried;
+// job = "teacher";
+// isMarried = false;
 
-console.log(
-  firstName +
-    " is a " +
-    age +
-    " year old " +
-    job +
-    ". Is she married? " +
-    isMarried
-);
+// console.log(
+//   firstName +
+//     " is a " +
+//     age +
+//     " year old " +
+//     job +
+//     ". Is she married? " +
+//     isMarried
+// );
 
-// Variable mutation
+// // Variable mutation
 
-age = "thirty four";
-job = "driver";
+// age = "thirty four";
+// job = "driver";
 
-alert(
-  firstName +
-    " is a " +
-    age +
-    " year old " +
-    job +
-    ". Is she married? " +
-    isMarried
-);
+// alert(
+//   firstName +
+//     " is a " +
+//     age +
+//     " year old " +
+//     job +
+//     ". Is she married? " +
+//     isMarried
+// );
 
-var lastName = prompt("What is her last name?");
-console.log(firstName + " " + lastName);
+// var lastName = prompt("What is her last name?");
+// console.log(firstName + " " + lastName);
+
+/*************************************
+ * Basic operators
+ */
+
+// var year, yearJackie, yearPaul;
+// now = 2018;
+// ageJackie = 34;
+// agePaul = 32;
+
+// // Math operators
+// yearJackie = now - ageJackie;
+// yearPaul = now - agePaul;
+
+// console.log(yearJackie);
+// console.log(yearPaul);
+// console.log(now + 2);
+// console.log(now * 2);
+// console.log(now / 10);
+
+// // Logical operators
+// var jackieOlder = ageJackie > agePaul;
+// console.log(jackieOlder);
+
+// // typeof operator
+
+// console.log(typeof jackieOlder);
+// console.log(typeof ageJackie);
+// console.log(typeof "Jackie is older than Paul");
+// var x;
+// console.log(typeof x);
+
+//Lecture: variable 2
+
+// var name = "jackie";
+// var age = 34;
+// console.log(name + " " + age);
+
+// var job, isMarried;
+
+// job = "teacher";
+// isMarried = true;
+// console.log(
+//   name +
+//     " is a  " +
+//     age +
+//     " years old " +
+//     job +
+//     " . Is he married? " +
+//     isMarried +
+//     "."
+// );
+
+// age = "thirty four";
+// job = "driver";
+
+// console.log(
+//   name +
+//     " is a " +
+//     age +
+//     " years old " +
+//     job +
+//     ". Is she married " +
+//     isMarried +
+//     "."
+// );
+
+// var lastName = prompt("What is the last name?");
+// console.log(lastName);
+
+// alert(
+//   name +
+//     " is a " +
+//     age +
+//     " years old " +
+//     job +
+//     ". Is she married? " +
+//     isMarried +
+//     "."
+// );
+
+/**************************************
+ * Operator precedence
+ */
+
+var now = 2018;
+var yearJackie = 1984;
+var fullAge = 34;
+
+var isFullAge = now - yearJackie >= fullAge; //true
+console.log(isFullAge);
