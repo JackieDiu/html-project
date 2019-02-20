@@ -146,5 +146,28 @@ var now = 2018;
 var yearJackie = 1984;
 var fullAge = 34;
 
+// Multiple operators
 var isFullAge = now - yearJackie >= fullAge; //true
 console.log(isFullAge);
+
+// Grouping
+var ageJackie = now - yearJackie;
+var agePaul = 32;
+var average = (ageJackie + agePaul) / 2;
+console.log(average);
+
+// Multiple assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+console.log(x, y);
+
+// More operators
+// x = x * 2;
+x *= 2;
+console.log(x);
+
+x += 10;
+console.log(x);
+
+x++; //x = x + 1  / x +=1
+console.log(x);
