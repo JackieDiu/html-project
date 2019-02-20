@@ -199,3 +199,34 @@
 
 // console.log(ageJackie);
 // console.log(agePaul);
+
+/****************************
+ * CODING CHALLENGE 1
+ */
+
+// var jackieHeight = 1.62;
+// var paulHeight = 1.65;
+// var jackieMass = 3;
+// var paulMass = 4;
+
+// var bmiJackie = (jackieMass / jackieHeight) * 2;
+// var bmiPaul = (paulMass / paulHeight) * 2;
+// console.log(bmiJackie, bmiPaul);
+
+// var isTrue = bmiJackie >= bmiPaul;
+// console.log("Is Jackie's BMI higher than Paul's?" + " " + isTrue);
+
+/**************************************************
+ * Lecture: if/else statements
+ */
+
+var name = "Jackie";
+var age = 34;
+var isMarried = "yes";
+
+if (isMarried === "yes") {
+  //if (false)
+  console.log(name + " is married! ");
+} else {
+  console.log(name + " will hopefully marry soon :) ");
+}
