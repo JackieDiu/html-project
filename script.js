@@ -142,32 +142,60 @@
  * Operator precedence
  */
 
-var now = 2018;
-var yearJackie = 1984;
-var fullAge = 34;
+// var now = 2018;
+// var yearJackie = 1984;
+// var fullAge = 34;
 
-// Multiple operators
-var isFullAge = now - yearJackie >= fullAge; //true
-console.log(isFullAge);
+// // Multiple operators
+// var isFullAge = now - yearJackie >= fullAge; //true
+// console.log(isFullAge);
 
-// Grouping
-var ageJackie = now - yearJackie;
-var agePaul = 32;
-var average = (ageJackie + agePaul) / 2;
-console.log(average);
+// // Grouping
+// var ageJackie = now - yearJackie;
+// var agePaul = 32;
+// var average = (ageJackie + agePaul) / 2;
+// console.log(average);
 
-// Multiple assignments
-var x, y;
-x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+// // Multiple assignments
+// var x, y;
+// x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+// console.log(x, y);
 
-// More operators
-// x = x * 2;
-x *= 2;
-console.log(x);
+// // More operators
+// // x = x * 2;
+// x *= 2;
+// console.log(x);
 
-x += 10;
-console.log(x);
+// x += 10;
+// console.log(x);
 
-x++; //x = x + 1  / x +=1
-console.log(x);
+// x++; //x = x + 1  / x +=1
+// console.log(x);
+
+/****************************************
+ * Operator precedence
+ */
+
+//
+
+// //Lecture: operator
+// var now = 2018;
+// var birthYear = now - 34;
+
+// birthYear = now - 34 * 2;
+// // 2018 - 68
+// // 1950
+
+// console.log(birthYear);
+
+// var ageJackie = 34;
+// var agePaul = 32;
+
+// ageJackie = agePaul = (3 + 5) * 4 - 6;
+// //ageJackie = agePaul = 26
+
+// ageJackie++;
+// agePaul *= 2;
+
+// console.log(ageJackie);
+// console.log(agePaul);
