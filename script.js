@@ -205,12 +205,13 @@
  */
 
 // var jackieHeight = 1.62;
-// var paulHeight = 1.65;
-// var jackieMass = 3;
-// var paulMass = 4;
+// var jackieMass = 73;
 
-// var bmiJackie = (jackieMass / jackieHeight) * 2;
-// var bmiPaul = (paulMass / paulHeight) * 2;
+// var paulHeight = 1.65;
+// var paulMass = 84;
+
+// var bmiJackie = jackieMass / (jackieHeight * 2);
+// var bmiPaul = paulMass / (paulHeight * 2);
 // console.log(bmiJackie, bmiPaul);
 
 // var isTrue = bmiJackie >= bmiPaul;
@@ -220,13 +221,86 @@
  * Lecture: if/else statements
  */
 
-var name = "Jackie";
-var age = 34;
-var isMarried = "yes";
+// var name = "Jackie";
+// var age = 34;
+// var isMarried = "yes";
 
-if (isMarried === "yes") {
-  //if (false)
-  console.log(name + " is married! ");
-} else {
-  console.log(name + " will hopefully marry soon :) ");
-}
+// if (isMarried === "yes") {
+//   //if (false)
+//   console.log(name + " is married! ");
+// } else {
+//   console.log(name + " will hopefully marry soon :) ");
+// }
+
+// isMarried = true;
+
+// if (isMarried) {
+//   console.log("YESS!!");
+// } else {
+//   console.log("NO!");
+// }
+
+// if (isMarried) {
+//   console.log("yes!");
+// }
+
+// // == type correcion
+// // === does not, its better to use and safer
+
+// if (23 === "23") {
+//   console.log("something to print...");
+// } else {
+//   console.log("does not equal the same thing");
+// }
+
+/**********************************************************
+ * Lecture: boolean logic and switch
+ */
+
+// var age = 20;
+
+// if (age < 20) {
+//   console.log("Jackie is a teenager");
+// } else if (age >= 20 && age < 30) {
+//   console.log("Jackie is a young woman");
+// } else {
+//   console.log("Jackie is a woman");
+// }
+
+// var job = "teacher";
+// job = prompt("What does Jackie do?");
+
+// switch (job) {
+//   case "teacher":
+//     console.log("Jackie teaches kids");
+//     break;
+//   case "driver":
+//     console.log("Jackie drives a cab is Lisbon.");
+//     break;
+//   case "cop":
+//     console.log("Jackie helps fights crime");
+//     break;
+//   default:
+//     console.log("Jackie does something else");
+// }
+
+/*****************************************************
+ * CODING CHALLENGE
+ */
+
+// var heightJackie = 155;
+// var heightPaul = 159;
+// var heightHargao = 85;
+
+// var ageJackie = 34;
+// var agePaul = 32;
+// var ageHargao = 9;
+
+// var valueJackie = heightJackie + 5 * ageJackie;
+// var valuePaul = heightPaul + 5 * agePaul;
+// var valueHargao = heightHargao + 5 * ageHargao;
+// console.log(valueJackie, valuePaul, valueHargao);
+
+/********************************************
+ * If / else statements
+ */
