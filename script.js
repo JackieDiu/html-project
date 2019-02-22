@@ -290,17 +290,83 @@
 
 // var heightJackie = 155;
 // var heightPaul = 159;
-// var heightHargao = 85;
 
 // var ageJackie = 34;
 // var agePaul = 32;
-// var ageHargao = 9;
 
 // var valueJackie = heightJackie + 5 * ageJackie;
 // var valuePaul = heightPaul + 5 * agePaul;
-// var valueHargao = heightHargao + 5 * ageHargao;
-// console.log(valueJackie, valuePaul, valueHargao);
+
+// if (valueJackie > valuePaul) {
+//   console.log("Jackie wins the game with " + valueJackie + " points!");
+// } else if (valuePaul > valueJackie) {
+//   console.log("Paul wins the game with " + valuePaul + " points!");
+// } else if (valueJackie === valuePaul) {
+//   console.log("There is a draw.");
+// }
+
+// var heightMary = 162;
+// var ageMary = 33;
+
+// var valueMary = heightMary + 5 * ageMary;
+// console.log(valueJackie, valuePaul, valueMary);
+
+// if (valueJackie > valuePaul && valueJackie > valueMary) {
+//   console.log("Jackie is the winner with " + valueJackie + " points!");
+// } else if (valuePaul > valueJackie && valuePaul > valueMary) {
+//   console.log("Paul is the winner with " + valuePaul + " points");
+// } else if (valueMary > valueJackie && valueMary > valuePaul) {
+//   console.log("Mary is the winner with " + valueMary + " points!");
+// } else {
+//   console.log("It's a draw");
+// }
 
 /********************************************
  * If / else statements
  */
+
+// var firstName = "Jackie";
+// var civilStatus = "single";
+
+// if (civilStatus === "married") {
+//   console.log(firstName + " is married!");
+// } else {
+//   console.log(firstName + " will hopefully marry soon :) ");
+// }
+
+// var isMarried = false;
+// if (isMarried) {
+//   console.log(firstName + " is married!");
+// } else {
+//   console.log(firstName + " will hopefully marry soon :)");
+// }
+
+/*************************************
+ * Lecture: Functions
+ */
+
+function calculateAge(yearOfBirth) {
+  var age = 2019 - yearOfBirth;
+  return age;
+}
+
+var ageJackie = calculateAge(1984);
+var agePaul = calculateAge(1986);
+var ageMary = calculateAge(1946);
+console.log(ageJackie, agePaul, ageMary);
+
+function yearsRetirement(name, year) {
+  var age = calculateAge(year);
+  var retirement = 65 - age;
+
+  if (retirement >= 0) {
+    console.log(name + " will retire in " + retirement + " years.");
+  } else {
+    console.log(name + " is already retired.");
+  }
+}
+
+yearsRetirement("Jackie", 1984);
+yearsRetirement("Paul", 1986);
+yearsRetirement("Mary", 1946);
+yearsRetirement("Peter", 1962);
