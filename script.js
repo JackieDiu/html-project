@@ -345,28 +345,67 @@
  * Lecture: Functions
  */
 
-function calculateAge(yearOfBirth) {
-  var age = 2019 - yearOfBirth;
-  return age;
-}
+// function calculateAge(yearOfBirth) {
+//   var age = 2019 - yearOfBirth;
+//   return age;
+// }
 
-var ageJackie = calculateAge(1984);
-var agePaul = calculateAge(1986);
-var ageMary = calculateAge(1946);
-console.log(ageJackie, agePaul, ageMary);
+// var ageJackie = calculateAge(1984);
+// var agePaul = calculateAge(1986);
+// var ageMary = calculateAge(1946);
+// console.log(ageJackie, agePaul, ageMary);
 
-function yearsRetirement(name, year) {
-  var age = calculateAge(year);
-  var retirement = 65 - age;
+// function yearsRetirement(name, year) {
+//   var age = calculateAge(year);
+//   var retirement = 65 - age;
 
-  if (retirement >= 0) {
-    console.log(name + " will retire in " + retirement + " years.");
-  } else {
-    console.log(name + " is already retired.");
-  }
-}
+//   if (retirement >= 0) {
+//     console.log(name + " will retire in " + retirement + " years.");
+//   } else {
+//     console.log(name + " is already retired.");
+//   }
+// }
 
-yearsRetirement("Jackie", 1984);
-yearsRetirement("Paul", 1986);
-yearsRetirement("Mary", 1946);
-yearsRetirement("Peter", 1962);
+// yearsRetirement("Jackie", 1984);
+// yearsRetirement("Paul", 1986);
+// yearsRetirement("Mary", 1946);
+// yearsRetirement("Peter", 1962);
+
+// function calculateAge(yearOfBirth) {
+//   var age = 2019 - yearOfBirth;
+//   return age;
+// }
+
+// var ageJackie = calculateAge(1984);
+// var agePaul = calculateAge(1988);
+// var ageRichard = calculateAge(1993);
+// console.log(ageJackie, agePaul, ageRichard);
+
+// function yearsUntilRetirement(name, year) {
+//   var age = calculateAge(year);
+//   var retirement = 65 - age;
+
+//   if (retirement >= 0) {
+//     console.log(name + " retires in " + retirement + " years.");
+//   } else {
+//     console.log(name + " is already retired.");
+//   }
+// }
+
+// yearsUntilRetirement("Jackie", 1984);
+// yearsUntilRetirement("Paul", 1968);
+// yearsUntilRetirement("Richard", 1950);
+
+/****************************************************************
+ * The Ternary Operator and Switch Statements
+ */
+
+var firstName = "Jackie";
+var age = 22;
+
+age >= 18
+  ? console.log(firstName + " drinks beer.")
+  : console.log(firstName + " drinks juice.");
+
+var drink = age >= 18 ? "beer" : "juice";
+console.log(drink);
