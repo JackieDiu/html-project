@@ -400,12 +400,141 @@
  * The Ternary Operator and Switch Statements
  */
 
-var firstName = "Jackie";
-var age = 22;
+// var firstName = "Jackie";
+// var age = 16;
 
-age >= 18
-  ? console.log(firstName + " drinks beer.")
-  : console.log(firstName + " drinks juice.");
+// age >= 18
+//   ? console.log(firstName + " drinks beer.")
+//   : console.log(firstName + " drinks juice.");
 
-var drink = age >= 18 ? "beer" : "juice";
-console.log(drink);
+// var drink = age >= 18 ? "beer" : "juice";
+// console.log(drink);
+
+//switch statement
+
+// var job = "instructor";
+// switch (job) {
+//   case "teacher":
+//   case "instructor":
+//     console.log(firstName + " teaches kids how to code.");
+//     break;
+//   case "driver":
+//     console.log(firstName + " drives an uber in Lisbon.");
+//     break;
+//   case "designer":
+//     console.log(firstName + " designs beautiful websites.");
+//     break;
+//   default:
+//     console.log(firstName + " does something else");
+// }
+
+// switch (true) {
+//   case age < 13:
+//     console.log(fistName + " is a girl.");
+//     break;
+//   case age >= 13 && age < 20:
+//     console.log(firstName + " is a teenager.");
+//     break;
+//   case age >= 20 && age < 30:
+//     console.log(firstName + " is a young woman.");
+//     break;
+//   default:
+//     console.log(firstName + " is a woman.");
+// }
+
+/******************************************************************************
+ * Lectures: Statements and Expressions
+ */
+
+//  //function statement
+//  function someFun(par) {
+//    //code
+//  }
+
+//  //function expression
+//  var someFun = function(par) {
+//   //code
+//  }
+
+//  //expressions
+//  3+4;
+//  var x = 3;
+
+//  //statements
+//  if(x === 5) {
+//    // do something
+//  }
+
+/****************************************************
+ * Truthy and Falsy values and equality operators
+ */
+
+//falsy values: undefined, null, 0, '', NaN
+//truthy valuse: NOT falsy values
+
+// var height;
+// height = 23;
+
+// if (height || height === 0) {
+//   console.log("variable is defined");
+// } else {
+//   console.log("variable is NOT defined");
+// }
+
+// //Equality operator
+
+// if (height === "23") {
+//   console.log("The == operator does type coericon!");
+// }
+
+/*********************************************************************
+ * Lecture: Arrays
+ */
+
+// var names = ["Jackie", "Paul", "Hargao"];
+// var years = new Array(1984, 1969, 1948);
+
+// console.log(names[0]);
+// names[1] = "Ben";
+// console.log(names);
+
+// var jackie = ["Jackie", "Diu", 1984, "designer", false];
+
+// jackie.push("blue"); //adds element to the end of the array
+// jackie.unshift("Ms."); // adds element to the begging of the array
+// jackie.pop(); //removes last element from array
+// jackie.shift(); //removes the first element from the array
+
+// console.log(jackie);
+
+// // alert(jackie.indexOf("Diu")); //returns the position of the element that you pass into as argument
+
+// if (jackie.indexOf("teacher") === -1) {
+//   console.log("Jackie is not a teacher.");
+// }
+
+/************************************************************************
+ * CODING CHALLENAGE
+ */
+
+// var averageJohn = (98 + 120 + 103) / 3;
+// var averageMike = (116 + 100 + 123) / 3;
+
+// // if (averageJohn > averageMike) {
+// //   console.log("John is the winner with " + averageJohn + " points.");
+// // } else {
+// //   console.log("Mike is the winner with " + averageMike + " points.");
+// // }
+
+// var averageMary = (97 + 134 + 105) / 3;
+// console.log(averageJohn, averageMike, averageMary);
+
+// if (averageJohn > averageMike && averageJohn > averageMary) {
+//   console.log("John is the winner with " + averageJohn + " points.");
+// } else if (averageMike > averageMary && averageMike > averageJohn) {
+//   console.log("Mike is the winner with " + averageMike + " points.");
+// } else if (averageMary > averageJohn && averageMary > averageMike) {
+//   console.log("Mary is the winner with " + averageMary + " points.");
+// } else {
+//   console.log("It is a draw.");
+// }
