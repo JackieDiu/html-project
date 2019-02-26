@@ -538,3 +538,33 @@
 // } else {
 //   console.log("It is a draw.");
 // }
+
+/************************************************************************************
+ * Lecture: Objects
+ */
+
+var jackie = {
+  name: "Jackie",
+  lastName: "Diu",
+  yearOfBirth: 1984,
+  job: "Teacher",
+  isMarried: false
+};
+console.log(jackie.lastName); // retrieving using dot notation
+console.log(jackie["yearOfBirth"]); //retrieving using square brackets
+
+var xyz = "job";
+console.log(jackie[xyz]);
+
+jackie.lastName = "Shin"; //mutation
+jackie["job"] = "programmer"; // mutate data in the object
+
+console.log(jackie);
+
+var jane = new Object();
+jane.name = "Jane";
+jane.lastName = "Smith";
+jane["yearOfBirth"] = 1969;
+jane["job"] = "retired";
+jane["isMarried"] = true;
+console.log(jane);
