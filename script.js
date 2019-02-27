@@ -542,29 +542,145 @@
 /************************************************************************************
  * Lecture: Objects
  */
-
+/* v1.0
 var jackie = {
   name: "Jackie",
   lastName: "Diu",
   yearOfBirth: 1984,
   job: "Teacher",
-  isMarried: false
+  isMarried: false,
+  family: ["jeff", "mark", "bob"],
+  calculateAge: function() {
+    return 2019 - this.yearOfBirth; //this is referring to the object jackie
+  }
 };
+
+// console.log(jackie.calculateAge(1974)); //retrieving
+console.log(jackie.calculateAge());
+
 console.log(jackie.lastName); // retrieving using dot notation
 console.log(jackie["yearOfBirth"]); //retrieving using square brackets
 
-var xyz = "job";
-console.log(jackie[xyz]);
+// var xyz = "job";
+// console.log(jackie[xyz]);
 
-jackie.lastName = "Shin"; //mutation
-jackie["job"] = "programmer"; // mutate data in the object
+// jackie.lastName = "Shin"; //mutation
+// jackie["job"] = "programmer"; // mutate data in the object
+
+// console.log(jackie);
+
+var age = jackie.calculateAge();
+jackie.age = age;
 
 console.log(jackie);
 
-var jane = new Object();
-jane.name = "Jane";
-jane.lastName = "Smith";
-jane["yearOfBirth"] = 1969;
-jane["job"] = "retired";
-jane["isMarried"] = true;
-console.log(jane);
+
+*/
+
+// v2.0
+
+// var jackie = {
+//   name: "Jackie",
+//   lastName: "Diu",
+//   yearOfBirth: 1984,
+//   job: "Teacher",
+//   isMarried: false,
+//   family: ["jeff", "mark", "bob"],
+//   calculateAge: function() {
+//     this.age = 2019 - this.yearOfBirth;
+//   }
+// };
+
+// jackie.calculateAge();
+// console.log(jackie);
+
+// var jane = new Object();
+// jane.name = "Jane";
+// jane.lastName = "Smith";
+// jane["yearOfBirth"] = 1969;
+// jane["job"] = "retired";
+// jane["isMarried"] = true;
+// console.log(jane);
+
+/////////////////////////////////////////////////////////
+// Lecture: Loops
+
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+/*
+0, true, print 0, update i to 1
+1, true, print 1, update i to 2
+.
+.
+.
+9, true, print 9, update i to 10
+10, false, end loop!
+*/
+
+// var names = ["John", "Jane", "Mary", "Mark", "Bob"];
+
+// for (var i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+// }
+
+// for (var i = names.length - 1; i >= 0; i--) {
+//   console.log(names[i]);
+// }
+
+//while loops
+// var i = 0;
+// while (i < names.length) {
+//   console.log(names[i]);
+//   i++;
+// }
+
+// for (var i = 1; i <= 5; i++) {
+//   if (i === 3) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+/************************************************************
+ * CODING CHALLENAGE 2
+ */
+
+// var yearOfBirth = [1984, 1999, 2007, 1967, 2002, 1993];
+// var age = [];
+
+// for (var i = 0; i < yearOfBirth.length; i++) {
+//   age.push(2019 - yearOfBirth[i]);
+// }
+// console.log(age);
+
+// for (var i = 0; i < age.length; i++) {
+//   if (age[i] >= 18) {
+//     console.log("Person is at least 18 and older. " + age[i] + " years old");
+//   } else {
+//     console.log("Person is under 18. " + age[i] + " years old");
+//   }
+// }
+
+// function printFullAge(years) {
+//   if (years >= 18) {
+//     console.log();
+//   }
+// }
+
+function fizzBuzz(num) {
+  for (var i = 1; i <= num; i++) {
+    // console.log(i);
+    if (i % 15 === 0) {
+      console.log("fizzbuzz");
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log("buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+fizzBuzz(20);
