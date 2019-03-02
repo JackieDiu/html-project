@@ -647,40 +647,50 @@ console.log(jackie);
  * CODING CHALLENAGE 2
  */
 
-// var yearOfBirth = [1984, 1999, 2007, 1967, 2002, 1993];
-// var age = [];
+function printFullAge(yearOfBirth) {
+  var ages = [];
+  var fullAges = [];
 
-// for (var i = 0; i < yearOfBirth.length; i++) {
-//   age.push(2019 - yearOfBirth[i]);
-// }
-// console.log(age);
+  for (var i = 0; i < yearOfBirth.length; i++) {
+    ages[i] = 2019 - yearOfBirth[i];
+  }
 
-// for (var i = 0; i < age.length; i++) {
-//   if (age[i] >= 18) {
-//     console.log("Person is at least 18 and older. " + age[i] + " years old");
-//   } else {
-//     console.log("Person is under 18. " + age[i] + " years old");
-//   }
-// }
-
-// function printFullAge(years) {
-//   if (years >= 18) {
-//     console.log();
-//   }
-// }
-
-function fizzBuzz(num) {
-  for (var i = 1; i <= num; i++) {
-    // console.log(i);
-    if (i % 15 === 0) {
-      console.log("fizzbuzz");
-    } else if (i % 3 === 0) {
-      console.log("fizz");
-    } else if (i % 5 === 0) {
-      console.log("buzz");
+  for (var i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+      console.log(
+        "Person " +
+          (i + 1) +
+          " is at least 18 and older. " +
+          ages[i] +
+          " years old"
+      );
+      fullAges.push(true);
     } else {
-      console.log(i);
+      console.log(
+        "Person " + (i + 1) + " is under 18. " + ages[i] + " years old"
+      );
+      fullAges.push(false);
     }
   }
+  return fullAges;
 }
-fizzBuzz(20);
+
+var yearOfBirth = [1984, 1999, 2007, 1967, 2002, 1993];
+var full_1 = printFullAge(yearOfBirth);
+var full_2 = printFullAge([2012, 1915, 1999]);
+
+// function fizzBuzz(num) {
+//   for (var i = 1; i <= num; i++) {
+//     // console.log(i);
+//     if (i % 15 === 0) {
+//       console.log("fizzbuzz");
+//     } else if (i % 3 === 0) {
+//       console.log("fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+// fizzBuzz(20);
