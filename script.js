@@ -647,37 +647,37 @@ console.log(jackie);
  * CODING CHALLENAGE 2
  */
 
-function printFullAge(yearOfBirth) {
-  var ages = [];
-  var fullAges = [];
+// function printFullAge(yearOfBirth) {
+//   var ages = [];
+//   var fullAges = [];
 
-  for (var i = 0; i < yearOfBirth.length; i++) {
-    ages[i] = 2019 - yearOfBirth[i];
-  }
+//   for (var i = 0; i < yearOfBirth.length; i++) {
+//     ages[i] = 2019 - yearOfBirth[i];
+//   }
 
-  for (var i = 0; i < ages.length; i++) {
-    if (ages[i] >= 18) {
-      console.log(
-        "Person " +
-          (i + 1) +
-          " is at least 18 and older. " +
-          ages[i] +
-          " years old"
-      );
-      fullAges.push(true);
-    } else {
-      console.log(
-        "Person " + (i + 1) + " is under 18. " + ages[i] + " years old"
-      );
-      fullAges.push(false);
-    }
-  }
-  return fullAges;
-}
+//   for (var i = 0; i < ages.length; i++) {
+//     if (ages[i] >= 18) {
+//       console.log(
+//         "Person " +
+//           (i + 1) +
+//           " is at least 18 and older. " +
+//           ages[i] +
+//           " years old"
+//       );
+//       fullAges.push(true);
+//     } else {
+//       console.log(
+//         "Person " + (i + 1) + " is under 18. " + ages[i] + " years old"
+//       );
+//       fullAges.push(false);
+//     }
+//   }
+//   return fullAges;
+// }
 
-var yearOfBirth = [1984, 1999, 2007, 1967, 2002, 1993];
-var full_1 = printFullAge(yearOfBirth);
-var full_2 = printFullAge([2012, 1915, 1999]);
+// var yearOfBirth = [1984, 1999, 2007, 1967, 2002, 1993];
+// var full_1 = printFullAge(yearOfBirth);
+// var full_2 = printFullAge([2012, 1915, 1999]);
 
 // function fizzBuzz(num) {
 //   for (var i = 1; i <= num; i++) {
@@ -694,3 +694,43 @@ var full_2 = printFullAge([2012, 1915, 1999]);
 //   }
 // }
 // fizzBuzz(20);
+
+/******************************************************************
+ * CODING CHALLENGE 3
+ * TIP CALCULATOR
+ */
+
+// bill = {
+//   124 - 15% between $50-$200
+//   48 - 20% under $50
+//   268 - 10% over $200
+// }
+
+// two arrays
+// 1. containing all 3 tips (one for each bill)
+// 2. containing all 3 finall paid amounts (bill + tip)
+
+// 20% of a value = 20/100 = 0.2
+
+function tipCalculator(bill) {
+  var percentage;
+  if (bill < 50) {
+    percentage = 0.2;
+  } else if (bill > 50 && bill < 200) {
+    percentage = 0.15;
+  } else {
+    percentage = 0.1;
+  }
+  return percentage * bill;
+}
+
+var bills = [124, 48, 268];
+var tips = [
+  tipCalculator(bills[0]),
+  tipCalculator(bills[1]),
+  tipCalculator(bills[2])
+];
+
+var tipValues = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+
+console.log(tips, tipValues);
