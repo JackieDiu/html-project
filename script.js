@@ -712,25 +712,142 @@ console.log(jackie);
 
 // 20% of a value = 20/100 = 0.2
 
-function tipCalculator(bill) {
-  var percentage;
-  if (bill < 50) {
-    percentage = 0.2;
-  } else if (bill > 50 && bill < 200) {
-    percentage = 0.15;
-  } else {
-    percentage = 0.1;
-  }
-  return percentage * bill;
-}
+// function tipCalculator(bill) {
+//   var percentage;
+//   if (bill < 50) {
+//     percentage = 0.2;
+//   } else if (bill > 50 && bill < 200) {
+//     percentage = 0.15;
+//   } else {
+//     percentage = 0.1;
+//   }
+//   return percentage * bill;
+// }
 
-var bills = [124, 48, 268];
-var tips = [
-  tipCalculator(bills[0]),
-  tipCalculator(bills[1]),
-  tipCalculator(bills[2])
-];
+// var bills = [124, 48, 268];
+// var tips = [
+//   tipCalculator(bills[0]),
+//   tipCalculator(bills[1]),
+//   tipCalculator(bills[2])
+// ];
 
-var tipValues = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+// var tipValues = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
-console.log(tips, tipValues);
+// console.log(tips, tipValues);
+
+// function tipCalculator(bill) {
+//   var percentage;
+//   if (bill < 50) {
+//     percentage = 0.2;
+//   } else if (bill >= 50 && bill < 200) {
+//     percentage = 0.15;
+//   } else {
+//     percentage = 0.1;
+//   }
+//   return percentage * bill;
+// }
+
+// var bills = [124, 48, 168];
+// var tips = [
+//   tipCalculator(bills[0]),
+//   tipCalculator(bills[1]),
+//   tipCalculator(bills[2])
+// ];
+
+// var finalValue = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(tips, finalValue);
+// var bills = [124, 48, 268];
+
+// function calculator(bill) {
+//   debugger;
+//   for (var i = 0; i <= bill.length - 1; i++) {
+//     if (i < 50) {
+//       console.log("this is total tip " + i * 0.2);
+//     } else if (i >= 50 && i < 200) {
+//       console.log("this is total tip " + i * 0.15);
+//     } else {
+//       console.log("this is total tip " + i * 0.1);
+//     }
+//   }
+// }
+
+// calculator(bills);
+
+/******************************************************
+ * Objects and properties
+ */
+
+// Object literal
+
+// var john = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   birthYear: 1990,
+//   family: ["Jane", "Mark", "Bob", "Emily"],
+//   job: "teacher",
+//   isMarried: false
+// };
+
+// console.log(john.firstName);
+// var x = "birthYear";
+// console.log(john[x]);
+
+// john.job = "designer";
+// john["isMarried"] = true;
+
+// console.log(john);
+
+// // new Object syntax
+// var jane = new Object();
+// jane.name = "Jane";
+// jane.birthYear = 1969;
+// jane["lastName"] = "Smith";
+// console.log(jane);
+
+/**********************************************
+ * Objects and Methods
+ */
+
+// var john = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   birthYear: 1990,
+//   family: ["Jane", "Mark", "Bob", "Emily"],
+//   job: "teacher",
+//   isMarried: false,
+//   calcAge: function() {
+//     this.age = 2019 - this.birthYear; //function expression
+//   }
+// };
+
+// john.calcAge();
+// console.log(john);
+
+// var john = {
+//   fullName: "John Smith",
+//   mass: 110,
+//   height: 1.89,
+//   calcBMI: function() {
+//     this.bmi = this.mass / (this.height * 2);
+//     return this.bmi;
+//   }
+// };
+
+// var mark = {
+//   fullName: "Mark Miller",
+//   mass: 82,
+//   height: 1.67,
+//   calcBMI: function() {
+//     this.bmi = this.mass / (this.height * 2);
+//     return this.bmi;
+//   }
+// };
+
+// if (john.calcBMI() > mark.calcBMI()) {
+//   console.log(john.fullName + " has a higher bmi of " + john.bmi);
+// } else if (mark.bmi > john.bmi) {
+//   console.log(mark.fullName + " has a higher bmi of " + mark.bmi);
+// } else {
+//   console.log("they have the same bmi");
+// }
