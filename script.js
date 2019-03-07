@@ -757,10 +757,35 @@ console.log(jackie);
 // var finalValue = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 // console.log(tips, finalValue);
-// var bills = [124, 48, 268];
+
+var johnsBills = {
+  billValues: [124, 48, 268, 180, 42],
+  tips: [],
+  finalAmount: [],
+  calcTips: function() {
+    var tip = this.tips;
+    var bill = this.billValues;
+
+    for (var i = 0; i < bill.length; i++) {
+      if (bill[i] < 50) {
+        this.tips.push(0.2 * bill[i]);
+        this.finalAmount.push(tip[i] + bill[i]);
+      } else if (bill[i] >= 50 && bill[i] < 200) {
+        this.tips.push(0.15 * bill[i]);
+        this.finalAmount.push(tip[i] + bill[i]);
+      } else {
+        this.tips.push(0.1 * bill[i]);
+        this.finalAmount.push(tip[i] + bill[i]);
+      }
+    }
+    return this.calcTips;
+  }
+};
+
+johnsBills.calcTips();
+console.log(johnsBills);
 
 // function calculator(bill) {
-//   debugger;
 //   for (var i = 0; i <= bill.length - 1; i++) {
 //     if (i < 50) {
 //       console.log("this is total tip " + i * 0.2);
@@ -850,4 +875,50 @@ console.log(jackie);
 //   console.log(mark.fullName + " has a higher bmi of " + mark.bmi);
 // } else {
 //   console.log("they have the same bmi");
+// }
+
+/**************************************************************************
+ * Loops and Iteration
+ */
+
+// for (var i = 1; i <= 20; i += 2) {
+//   console.log(i);
+// }
+
+// i = 0, 0 < 10 true, log i to console, i++
+// i = 1, 1 < 10 true, log i to conosole, i++
+// .....
+// i = 9, 9 < 10 true, log i to console, i++
+// i = 10, 10 < 10 false, exit the loop!
+
+// var john = ["John", "Smith", 1990, "designer", false];
+
+// for (var i = 0; i < john.length; i++) {
+//   console.log(john[i]);
+// }
+
+// while loop
+// var i = 0;
+// while (i < john.length) {
+//   console.log(john[i]);
+//   i++;
+// }
+
+// continue and break statements
+
+// var john = ["John", "Smith", 1990, "designer", false, "blue"];
+
+// for (var i = 0; i < john.length; i++) {
+//   if (typeof john[i] !== "string") continue;
+//   console.log(john[i]);
+// }
+
+// for (var i = 0; i < john.length; i++) {
+//   if (typeof john[i] !== "string") break;
+//   console.log(john[i]);
+// }
+
+// // Looping backwards
+// for (var i = john.length - 1; i >= 0; i--) {
+//   console.log(john[i]);
 // }
