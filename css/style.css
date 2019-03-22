@@ -82,7 +82,7 @@ h5 {
   font-size: 20px;
   position: relative;
   top: 85px;
-  left: 10px;
+  left: 0;
 }
 
 h4 {
@@ -115,8 +115,22 @@ h1 {
   padding: 10px 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.name {
+  display: inline;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 .logo2 {
-  width: 50px;
+  width: 12%;
+  position: relative;
+  top: 8px;
+  left: -5px;
   z-index: 0;
 }
 
@@ -126,4 +140,64 @@ ul.footer-links {
 
 ul.footer-links li {
   display: inline-block;
+  margin: 5px;
 }
+
+ul.footer-links li:nth-child(1) img {
+  width: 70%;
+  position: relative;
+  top: 2px;
+}
+
+ul.footer-links li:nth-child(2) img {
+  width: 148%;
+}
+
+ul.footer-links li:nth-child(3) img {
+  width: 60%;
+  margin-left: 5px;
+}
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background-color: rgb(118, 138, 179);
+  height: 100%;
+  z-index: 5;
+  padding-top: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: rgb(140, 159, 196);
+}
+
+nav ul li a:hover {
+  background-color: rgb(161, 174, 201);
+}
+
+.exit-btn {
+  margin-bottom: 15px;
+  margin-top: 8px;
+  text-align: right;
+  padding: 0 20px;
+}
+
+/* .exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}  */
