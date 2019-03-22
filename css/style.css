@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cookie|Lily+Script+One|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Cookie|Lily+Script+One|Montserrat|Merriweather|Playfair+Display|Libre+Baskerville");
 
 html {
   height: 100%;
@@ -8,12 +8,14 @@ body {
   display: table;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding-bottom: [foot-height];
 }
 
-p {
+/* p {
   font-size: 12px;
   line-height: 5px;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -27,7 +29,6 @@ ul {
 }
 
 .initials {
-  /* font-family: "Lily Script One", cursive; */
   font-family: "Cookie", cursive;
   font-size: 40px;
 }
@@ -78,25 +79,43 @@ header {
   margin-top: 45%;
 }
 
+hr {
+  margin: 30px 0 10px;
+}
+
+.nameCap {
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+  padding: -20px 0;
+  margin: 30px 0 0;
+}
+
 .main-image {
   width: 70%;
-  margin: 15px auto 0 10%;
+  margin: 0px auto 0 10%;
+}
+
+.text {
+  padding: 0px 40px;
 }
 
 h5 {
+  margin: 0;
   font-size: 20px;
   position: relative;
-  top: 85px;
+  top: 0;
   left: 0;
 }
 
 h4 {
+  margin: 0;
   text-align: left;
   font-size: 20px;
   /* position: absolute; */
 }
 
 h3 {
+  margin: 0;
   text-align: right;
   font-size: 20px;
 }
@@ -108,9 +127,11 @@ h2 {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 21px;
+  color: rgb(16, 60, 206);
+  font-weight: bolder;
   position: relative;
-  top: -40px;
+  top: -30px;
 }
 
 .footer-container {
@@ -118,6 +139,11 @@ h1 {
   background-color: rgb(103, 125, 165);
   color: #fff;
   padding: 20px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: [footer-height];
 }
 
 a {
@@ -149,19 +175,19 @@ ul.footer-links li {
 }
 
 ul.footer-links li:nth-child(1) img {
-  width: 70%;
+  width: 110%;
   position: relative;
-  top: 2px;
+  top: 6px;
 }
 
-ul.footer-links li:nth-child(2) img {
+/* ul.footer-links li:nth-child(2) img {
   width: 148%;
 }
 
 ul.footer-links li:nth-child(3) img {
   width: 60%;
   margin-left: 5px;
-}
+} */
 
 nav ul {
   position: fixed;
@@ -201,3 +227,4 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 650px) {
+}
