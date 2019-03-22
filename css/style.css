@@ -119,3 +119,11 @@ h1 {
   width: 50px;
   z-index: 0;
 }
+
+ul.footer-links {
+  margin: 0 auto;
+}
+
+ul.footer-links li {
+  display: inline-block;
+}
