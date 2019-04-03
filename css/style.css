@@ -83,6 +83,11 @@ hr {
   margin: 15px 0;
 }
 
+.profileImg {
+  width: 150px;
+  border-radius: 25%;
+}
+
 .nameCap {
   font-size: 40px;
   font-family: "Merriweather", serif;
@@ -96,7 +101,7 @@ section a {
 
 section img {
   width: 100%;
-  position: relative;
+  /* position: relative; */
   /* top: 10px; */
   margin: 0;
   z-index: -7;
