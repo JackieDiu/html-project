@@ -56,18 +56,9 @@ ul {
   z-index: 0;
 }
 
-.hide-mobile {
-  display: none;
-}
-
 header {
   display: flex;
   justify-content: space-between;
-}
-
-.menu {
-  width: 25px;
-  margin-top: 45%;
 }
 
 hr {
@@ -143,7 +134,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .name a {
@@ -163,41 +154,25 @@ ul.contact-links li {
 }
 
 nav ul {
-  position: fixed;
   width: 60%;
   top: 0;
   right: 0;
   text-align: left;
-  background-color: rgb(118, 138, 179);
-  height: 100%;
   z-index: 5;
   padding-top: 20px;
 }
 
 nav ul li a {
-  color: #fff;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 15px 30px;
-  background-color: rgb(140, 159, 196);
 }
 
 nav ul li a:hover {
   background-color: rgb(161, 174, 201);
 }
 
-.exit-btn {
-  margin-bottom: 15px;
-  margin-top: 8px;
-  text-align: right;
-  padding: 0 20px;
-}
-
-.exit-btn img {
-  width: 15px;
-  cursor: pointer;
-}
 /* 
 @media only screen and (min-width: 650px) {
 } */
