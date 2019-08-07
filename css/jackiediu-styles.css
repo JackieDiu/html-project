@@ -63,10 +63,11 @@ nav {
   margin: 40px;
   background-color: rgba(170, 201, 219, 0.438);
   border-radius: 10px;
+  z-index: 2;
 }
 
 .about {
-  height: calc(100vh - 10vh);
+  height: 100vh;
   background-color: rgb(172, 172, 0);
 }
 
@@ -96,6 +97,31 @@ footer {
 @media only screen and (max-width: 400px) {
   body {
     background-color: blue;
+  }
+
+  .love-container {
+    position: relative;
+  }
+
+  .list {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .item {
+    width: 300px;
+    border: solid 3px purple;
+    margin: 10px;
+  }
+
+  .item img {
+    width: 290px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   /* .about {
