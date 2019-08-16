@@ -1,185 +1,167 @@
 @import url("https://fonts.googleapis.com/css?family=Cookie|Lily+Script+One|Montserrat|Merriweather|Playfair+Display|Libre+Baskerville");
 
-html {
-  height: 100%;
-}
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  border: solid 3px purple;
 }
 
-.container {
-  text-align: center;
-  padding: 10px 15px;
+li {
+  display: inline-block;
+  margin-left: 20px;
+  border: solid 3px honeydew;
 }
 
-.initials {
-  font-family: "Cookie", cursive;
-  font-size: 40px;
-}
-
-.initials:before {
-  content: "";
-  width: 70px;
-  height: 40px;
-  background-color: rgb(103, 125, 165);
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  left: 45px;
-  z-index: -2;
-}
-
-.initials:after {
-  content: "";
-  width: 14px;
-  height: 13px;
-  background-color: rgb(153, 146, 146);
-  border-radius: 50%;
-  position: absolute;
-  top: 30px;
-  left: 73px;
-  z-index: -1;
-}
-
-.logo {
-  width: 50px;
-  position: absolute;
-  top: 5px;
-  left: 55px;
-  z-index: 0;
+.wrapper {
+  border: solid 3px aqua;
 }
 
 header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 196, 87);
+  text-decoration: none;
   display: flex;
-  justify-content: space-between;
 }
 
-hr {
-  margin: 7px 0;
+.logo {
+  margin: 3px;
+  border: solid 3px rgb(172, 172, 0);
 }
 
-.profileImg {
-  width: 150px;
-  border-radius: 25%;
-}
-
-.nameCap {
-  font-size: 40px;
-  font-family: "Merriweather", serif;
-  padding: -20px 0;
-  margin: 14px 0 0;
-}
-
-.email {
-  color: rgb(103, 125, 165);
-}
-
-.bridgeImg {
+.mtn-logo {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  position: relative;
-  top: 5;
-  left: 0;
-  z-index: -7;
-  object-fit: scale-down;
+  display: flex;
+  width: 33%;
+  border: solid 3px green;
 }
 
-.text {
-  padding: 0px 40px;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  border: solid 3px yellow;
 }
 
-h5 {
-  margin: 5px;
-  font-size: 20px;
-  position: relative;
-  top: 5px;
-  left: 0;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
-h4 {
-  margin: 0;
-  text-align: left;
-  font-size: 20px;
-  /* position: absolute; */
-}
-
-h3 {
-  margin: 0;
-  text-align: right;
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-top: 16px;
-  margin-bottom: 0;
-  position: relative;
-  top: -18px;
-}
-
-.footer-container {
+.intro {
+  background-color: red;
   width: 100%;
-  background-color: rgb(103, 125, 165);
-  color: #fff;
-  padding: 20px 0;
-}
-
-.container a {
-  text-decoration: none;
-  color: #000;
-}
-
-ul.contact-links {
   margin: 0 auto;
+  text-align: center;
 }
 
-ul.contact-links li {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 5px;
+article {
+  background-color: sienna;
 }
 
-nav ul {
-  width: 60%;
-  top: 0;
-  right: 0;
-  text-align: left;
-  z-index: 5;
-  padding-top: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
+.section {
   width: 100%;
+  border: solid 3px fuchsia;
 }
 
-nav ul li a:hover {
-  background-color: rgb(161, 174, 201);
+.fixedBtn-home {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 40px;
+  background-color: rgba(170, 201, 219, 0.438);
+  border-radius: 10px;
+  z-index: 2;
 }
 
-/* 
-@media only screen and (min-width: 650px) {
-} */
+.about {
+  background-color: rgb(172, 172, 0);
+  border: solid 3px chocolate;
+}
+
+.project {
+  /* height: calc(100vh - 10vh); */
+  background-color: lightblue;
+  border: solid 3px chocolate;
+}
+
+.contact {
+  /* height: calc(100vh - 10vh); */
+  background-color: lightpink;
+  border: solid 3px chocolate;
+}
+
+.footer {
+  border: solid 3px darkorange;
+}
+
+footer {
+  height: 10vh;
+  background-color: rgb(255, 196, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px firebrick;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
-    background-color: #f09a9d;
+    background-color: blue;
+  }
+
+  .love-container {
+    text-align: center;
+  }
+
+  .list {
+    background-color: hotpink;
+  }
+
+  .item {
+    width: 300px;
+    margin: 10px;
+  }
+
+  .item img {
+    width: 290px;
+    margin: 2px auto;
+  }
+
+  .item p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .project {
+    align-content: center;
+  }
+
+  .footer {
+    text-align: center;
   }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  body {
+    background-color: green;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  body {
+    background-color: red;
+  }
 }

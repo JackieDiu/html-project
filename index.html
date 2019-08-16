@@ -1,95 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Jackie Diu - Front End Developer</title>
+    <title>Jackie Diu</title>
   </head>
+
   <body>
+    <!-- #region Wrapper div -->
     <div class="wrapper">
+      <!-- #region Header -->
       <header>
-        <div class="initials">JD</div>
-        <img src="images/pug.svg" alt="puggy logo" class="logo" />
+        <!-- .logo and nav are siblings-->
+        <div class="logo">
+          <a href="index.html">
+            <img
+              class="mtn-logo"
+              src="images/mtn-logo.png"
+              alt="mountain logo with initials"
+          /></a>
+        </div>
+        <!-- #region Navigation  -->
         <nav>
-          <ul class="show-desktop" id="nav">
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
+          <a href="#" class="hide-desktop">
+            <img
+              src="images/ham.svg"
+              alt="toggle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
+
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="images/exit.svg" alt="exit menu" />
+            </li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="/pages/project.html">project</a></li>
+            <li><a href="/pages/contact.html">contact</a></li>
           </ul>
+          <div class="fixedBtn-home">
+            <a href="#"
+              ><img src="images/icons8-double-up-50.png" alt="blue up arrow"
+            /></a>
+          </div>
         </nav>
+        <!-- #endregion Navigation -->
       </header>
-      <section>
-        <a href="mailto:jackiediu@gmail.com" alt="email" class="email">jackiediu@gmail.com</a>
-        <ul class="contact-links">
-          <li>
-            <a href="http://www.linkedin.com/in/jackiediu"
-              ><i
-                class="fab fa-linkedin"
-                style="font-size:24px; color: #000;"
-              ></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.github.com/jackiediu"
-              ><i class="fab fa-github" style="font-size:24px; color: #000;"></i
-            ></a>
-          </li>
-        </ul>
-        <hr />
-        <h1 class="nameCap">JACKIE DIU</h1>
-        <h2>Front End Developer</h2>
-        <hr />
-        <img src="images/2018_10_.jpg" alt="profile-image" class="profileImg"/>
-        <p>
-          I am a self-motivated, <br/>passionate and curious about programming, <br/> I love problem solving and learning.
-        </p>
-        <img
-          src="https://img.heypik.com/png-vector/20190122/ai-city-park-arch-bridge-scene-heypik-6BU457S.jpg!w264_q80"
-          alt="ฉากสะพานโค้งสวนเมือง @heypik" class="bridgeImg"
-        />
-        <div class="text">
-          <h5>Self-Starter</h5>
-          <h4>Self-Motivated</h4>
-          <h3>Problem Solver</h3>
-          <h2>Passionate & Curious about Programming</h2>
-        </div>
-      </section>
-    <footer>
-      <div class="footer-container">
-        <div class="container">
-          <div class="name">Jackie Diu</div>
-          <p class="address">Burbank, 91502</p>
-        <a href="mailto:jackiediu@gmail.com" alt="email" class='email'>jackiediu@gmail.com</a>
-        <ul class="contact-links">
-          <li>
-            <a href="http://www.linkedin.com/in/jackiediu"
-              ><i
-                class="fab fa-linkedin"
-                style="font-size:24px; color: #000;"
-              ></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.github.com/jackiediu"
-              ><i class="fab fa-github" style="font-size:24px; color: #000;"></i
-            ></a>
-          </li>
-        </ul>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
+      <!-- #endregion Header-->
+      <!-- #region Main -->
+      <main>
+        <div class="section about" id="about">
+          <div class="intro">
+            <h1>Hello and welcome</h1>
+            <h2>My Name Is Jackie Diu</h2>
+            <p>I am a front End Developer</p>
+          </div>
 
+          <section>
+            <div class="love-container">
+              <h2>What I love about Hargao</h2>
+              <ul class="list puppy-love">
+                <li class="item baby-hargao">
+                  <img
+                    src="images/hargao/baby-600x600.svg"
+                    alt="puppy pug looking at camera"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum veniam necessitatibus assumenda consectetur, laborum
+                    officiis?
+                  </p>
+                </li>
+                <li class="item happy-rug">
+                  <img
+                    src="images/hargao/pug-rug-600x600.svg"
+                    alt="happy pug laying on rug playing with rope toy"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ipsam facere nesciunt optio in accusantium eligendi sed
+                    labore!
+                  </p>
+                </li>
+                <li class="item bowtie-pug">
+                  <img
+                    src="images/hargao/bowtie-600x600.svg"
+                    alt="portrait of pug wearing blue bowtie"
+                  />
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse molestias, exercitationem dolore mollitia ad
+                    perferendis consequatur quaerat?
+                  </p>
+                </li>
+                <li class="item sleeping-pug">
+                  <img
+                    src="images/hargao/table-sleep-600x600.svg"
+                    alt="pug sleeping against table"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis commodi voluptatum a temporibus molestias!
+                  </p>
+                </li>
+                <li class="item puppy-face">
+                  <img
+                    src="images/hargao/puppy-paw-600x600.svg"
+                    alt="pug looking curiously at paw"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi porro hic dolores delectus accusamus corporis quaerat
+                    expedita tempora voluptate?
+                  </p>
+                </li>
+                <li class="item sun-face">
+                  <img
+                    src="images/hargao/sun-face-600x600.svg"
+                    alt="pug squints and smiles at sun"
+                  />
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quibusdam animi maiores aspernatur velit reiciendis commodi
+                    nobis cupiditate beatae repellat adipisci.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- #endregion Main -->
+      <!-- #region Footer -->
+      <footer>
+        <div class="section footer">
+          <div>&copy; Jackie Diu 2019</div>
+        </div>
+      </footer>
+      <!-- #endregion Footer -->
+    </div>
+    <!-- /#endregion Wrapper -->
   </body>
-
-  <script src="script.js"></script>
 </html>
